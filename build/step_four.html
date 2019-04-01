@@ -36,7 +36,9 @@
           <div class="step-four__choice-block">
             <h2>Шаг 4. Введите текст поздравления</h2>
             <form class="step-four__form">
-              <textarea class="step-four__textarea" placeholder="Христос Воскресе! Поздравляю с праздником Светлой Пасхи!"></textarea><a class="btn--share" href="step_five.html">Поделиться<img src="static/img/mail.png" alt=""></a>
+              <textarea class="step-four__textarea" placeholder="Христос Воскресе! Поздравляю с праздником Светлой Пасхи!"></textarea>
+              <h3>Введите e-mail получателя</h3>
+              <input class="step-four__input" type="text" placeholder="mail@mail.ru"><a class="btn--share toggle" href="javascript:;" data-toggle="modal" data-target="#popup">Отправить<img src="static/img/mail.png" alt=""></a>
             </form>
           </div>
         </section>
@@ -46,8 +48,23 @@
           <div class="main-footer__container"><a class="btn--map" href="contacts.html">Карта стендов<img src="static/img/icon-map.png" alt=""></a><a class="btn--info" href="about.html">О нас<img src="static/img/icon-info.png" alt=""></a></div>
         </div>
       </footer>
+      <div class="popup-block" id="popup">
+        <div class="popup-block__overlay">
+          <div class="popup-block__popup">
+            <div class="inner__content"><a class="popup-block__close" href="javascript:;" data-toggle="dismiss">Закрыть</a>
+              <div class="popup-block__row">
+                <div class="popup-block__header">
+                  <h2>Ваша открытка отправлена!</h2><img src="static/img/bg-picture-2.png" alt="">
+                  <p>Вы можете отправить столько открыток, сколько захотите!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/scroll-lock.js"></script>
   <script src="static/js/main.js"></script>
 </html>

@@ -2,7 +2,7 @@
 	&__choice-block h2 {
 		display: block;
 		text-align: center;
-		font-size: 6.7708333vw;
+		font-size: 6vw;
 		padding-top: 2.5vw;
 		padding-bottom: 1.666667vw;
 		font-weight: 500;
@@ -24,7 +24,6 @@
 	&__eggs-link {
 		display: flex;
 		width: 14.074074vw;
-		height: 15.092593vw;
 		margin-bottom: 1.5625vw;
 		&:not(:nth-child(6n)) {
 			margin-right: 2.777778vw;
@@ -47,5 +46,9 @@
 	}
 	&__tab-content.active {
 		display: block;
+	}
+	.step-two__next-block {
+		padding-bottom: 10.5vw;
+		padding-top: 10.8vw;
 	}
 }

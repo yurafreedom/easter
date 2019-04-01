@@ -34,7 +34,9 @@ html(lang="ru-RU")
 						h2 Шаг 4. Введите текст поздравления
 						form.step-four__form
 							textarea.step-four__textarea(placeholder="Христос Воскресе! Поздравляю с праздником Светлой Пасхи!")
-							a.btn--share(href="step_five.html") Поделиться
+							h3 Введите e-mail получателя
+							input.step-four__input(type="text" placeholder="mail@mail.ru")
+							a.btn--share(href="javascript:;" class="toggle" data-toggle="modal" data-target="#popup") Отправить
 								img(src="static/img/mail.png", alt="")
 			footer.main-footer
 				.wrapper
@@ -43,5 +45,16 @@ html(lang="ru-RU")
 							img(src="static/img/icon-map.png", alt="")
 						a.btn--info(href="about.html") О нас
 							img(src="static/img/icon-info.png", alt="")
+			.popup-block#popup
+				.popup-block__overlay
+					.popup-block__popup
+						.inner__content
+							a.popup-block__close(href="javascript:;" data-toggle="dismiss") Закрыть
+							.popup-block__row
+								.popup-block__header
+									h2 Ваша открытка отправлена!
+									img(src="static/img/bg-picture-2.png", alt="")
+									p Вы можете отправить столько открыток, сколько захотите!
 	script(src="static/js/jquery-3.3.1.min.js")
+	script(src="static/js/scroll-lock.js")
 	script(src="static/js/main.js")

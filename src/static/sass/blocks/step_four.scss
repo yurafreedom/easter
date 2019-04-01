@@ -1,3 +1,8 @@
+.step-three .step-one__next-block {
+	padding-top: 3.9814815vw;
+	padding-bottom: 4.4vw;
+}
+
 .step-four {
 	&__choice-block h2 {
 		display: block;
@@ -13,17 +18,35 @@
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		padding-bottom: 75.37037vw;
 		background-image: url('../img/bg_picture.png');
 		background-position: center;
+	}
+	&__form h3 {
+		display: block;
+		text-align: center;
+		font-weight: 500;
+		color: #4d3a73;
+		padding-top: 2.777778vw;
+		padding-bottom: 2.777778vw;
 	}
 	&__textarea {
 		width: 92.222222vw;
 		height: 23.981481vw;
-		margin-bottom: 3.703704vw;
 		outline: 2px solid #4d3a73;
 		padding: 2.314815vw;
 		&::placeholder {
+			font-weight: 500;
+			color: #4d3a73;
+		}
+	}
+	&__input {
+		border: 2px solid #4d3a73;
+		outline: 0;
+		width: 92.222222vw;
+		margin-bottom: 4vw;
+		padding: 2.314815vw;
+		&::placeholder {
+			text-align: center;
 			font-weight: 500;
 			color: #4d3a73;
 		}

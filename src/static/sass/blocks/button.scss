@@ -93,11 +93,12 @@
 	justify-content: center;
 	align-items: center;
 	width: 49.305556vw;
-	line-height: 20.185185vw;
+	line-height: 15.185185vw;
 	color: #fff;
 	padding-right: 5.888889vw;
 	background-color: #4d3a73;
 	text-transform: uppercase;
+	margin-bottom: 4vw;
 	transition: all .3s ease-in-out;
 	&:hover {
 		color: darken(#fff, 15%);
