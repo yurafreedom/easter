@@ -1,4 +1,5 @@
 .about-block {
+	position: relative;
 	padding-bottom: 40.2vw;
 }
 
@@ -18,4 +19,10 @@
 
 .btn--info.about img {
 	left: 4.888889vw;
+}
+
+.about-block__mini-picture {
+	position: absolute;
+	right: 6vw;
+	bottom: 0;
 }

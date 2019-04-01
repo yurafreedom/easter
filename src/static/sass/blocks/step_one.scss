@@ -13,9 +13,11 @@
 }
 
 .step-one__photo-block {
+	position: relative;
 	width: 92vw;
 	height: 38vw;
 	margin: 0 auto;
+	overflow: hidden;
 }
 
 .step-one__photo-block img {
