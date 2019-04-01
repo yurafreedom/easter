@@ -2,6 +2,15 @@
 	background-color: #fefce4;
 }
 
+.step-content {
+	display: flex;
+	flex-direction: column;
+}
+
+.step-footer {
+	margin-top: auto;
+}
+
 .step-one__heading-block h3 {
 	display: block;
 	text-align: center;
@@ -10,6 +19,7 @@
 	padding-bottom: 4.16667vw;
 	font-weight: 300;
 	font-style: italic;
+	letter-spacing: 0.025em;
 	color: #4d3a73;
 }
 
@@ -33,6 +43,7 @@
 	display: block;
 	text-align: center;
 	font-size: 4vw;
+	letter-spacing: 0.025em;
 	padding-top: 5vw;
 	padding-bottom: 5vw;
 	font-weight: 500;
@@ -59,11 +70,10 @@
 
 .step-one__next-block {
 	background: url('../img/bg_picture.png') no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
 	display: flex;
-	flex-direction: row;
-	justify-content: center;
-	margin-top: auto;
+	flex-direction: column;
+	align-items: center;
 	padding-top: 15vw;
 	padding-bottom: 15.2vw;
 }

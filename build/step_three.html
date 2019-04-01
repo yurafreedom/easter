@@ -33,15 +33,14 @@
             <h3>Создайте открытку и отправьте её друзьям</h3>
             <div class="step-one__photo-block"><img src="static/img/photo-1.png" alt=""></div>
           </div>
-          <div class="step-two__choice-block">
-            <h2>Шаг 3. Выберите оформление элементов</h2>
-            <div class="step-two__choice-controls">
-              <button class="btn btn--control" type="button">Выберите яйца</button>
-              <button class="btn btn--control active" type="button">Выберите кулич</button>
-            </div>
+          <div class="step-three__choice-block">
+            <h2>Шаг 4. Введите текст поздравления</h2>
+            <form class="step-three__form">
+              <textarea class="step-three__textarea" placeholder="Христос Воскресе! Поздравляю с праздником Светлой Пасхи!"></textarea>
+              <h3>Введите e-mail получателя</h3>
+              <input class="step-three__input" type="text" placeholder="mail@mail.ru"><a class="btn--share toggle" href="javascript:;" data-toggle="modal" data-target="#popup">Отправить<img src="static/img/mail.png" alt=""></a>
+            </form>
           </div>
-          <div class="step-two__easter-block"><a class="step-two__easter-link" href="#"><img src="static/img/easter-1.png" alt=""></a><a class="step-two__easter-link" href="#"><img src="static/img/easter-2.png" alt=""></a><a class="step-two__easter-link" href="#"><img src="static/img/easter-3.png" alt=""></a><a class="step-two__easter-link" href="#"><img src="static/img/easter-4.png" alt=""></a><a class="step-two__easter-link" href="#"><img src="static/img/easter-5.png" alt=""></a><a class="step-two__easter-link" href="#"><img src="static/img/easter-6.png" alt=""></a></div>
-          <div class="step-one__next-block"><a class="btn--next" href="step_four.html">Далее<img src="static/img/arrow-right.png" alt=""></a></div>
         </section>
       </div>
       <footer class="main-footer">
@@ -49,8 +48,23 @@
           <div class="main-footer__container"><a class="btn--map" href="contacts.html">Карта стендов<img src="static/img/icon-map.png" alt=""></a><a class="btn--info" href="about.html">О нас<img src="static/img/icon-info.png" alt=""></a></div>
         </div>
       </footer>
+      <div class="popup-block" id="popup">
+        <div class="popup-block__overlay">
+          <div class="popup-block__popup">
+            <div class="inner__content"><a class="popup-block__close" href="javascript:;" data-toggle="dismiss">Закрыть</a>
+              <div class="popup-block__row">
+                <div class="popup-block__header">
+                  <h2>Ваша открытка отправлена!</h2><img src="static/img/bg-picture-2.png" alt="">
+                  <p>Вы можете отправить столько открыток, сколько захотите!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </body>
   <script src="static/js/jquery-3.3.1.min.js"></script>
+  <script src="static/js/scroll-lock.js"></script>
   <script src="static/js/main.js"></script>
 </html>

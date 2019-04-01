@@ -1,14 +1,16 @@
 .main-page-wrap {
 	display: flex;
 	flex-direction: column;
-	min-height: calc(100% - 184px);
+	min-height: 100vh;
 	padding-top: 184px;
 }
 
 .main-page-blocks {
 	width: 100%;
-	display: block;
+	display: flex;
+	flex-direction: column;
 	flex-shrink: 0;
+	min-height: calc(100vh - 129px);
 }
 
 .page-header {
