@@ -1,0 +1,35 @@
+.contacts-block {
+	&__places {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 6.481481vw;
+		margin-bottom: 6.481481vw;
+	}
+	&__option {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 90%;
+		&:not(:last-child) {
+			margin-bottom: 3.703704vw;
+		}
+	}
+	&__photo {
+		width: 16.574074vw;
+	}
+	&__address {
+		width: 66.925926vw;
+	}
+	&__address h3 {
+		color: #271C5D;
+	}
+	&__address h3 span {
+		color: #CB0935;
+	}
+	&__address p {
+		margin: 0;
+		margin-top: 1.851852vw;
+		color: #271C5D;
+	}
+}

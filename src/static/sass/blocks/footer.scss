@@ -1,0 +1,11 @@
+.main-footer {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+}
+
+.main-footer__container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}

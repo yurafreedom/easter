@@ -1,0 +1,110 @@
+.popup-block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1300;
+	width: 100%;
+	height: 100%;
+	min-height: 100vh;
+	overflow-y: auto;
+	border-radius: 0;
+	display: none;
+}
+
+@keyframes bounce {
+	0%   { transform: translateY(-2000px); }
+	70%  { transform: translateY(30px); 	 }
+	90%  { transform: translateY(-10px);   }
+	100% { transform: translateY(0); 		   }
+}
+
+.popup-block__overlay {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+	width: 100%;
+	min-height: 100%;
+	overflow: hidden;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+
+.popup-block__popup {
+	position: relative;
+	box-shadow: 0px 10px 26px rgba(0, 0, 0, 0.5);
+	background-color: #fff;
+	animation-name: bounce;
+	animation-duration: 1.4s;
+	width: 78.888889vw;
+	height: 81.851852vw;
+	background-color: #FEFCE4;
+}
+
+.popup-block__popup .inner__content {
+	height: auto;
+}
+
+.popup-block__close {
+	position: absolute;
+	left: 50%;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	transform: translateX(-50%);
+	bottom: 5.555556vw;
+	width: 33.888889vw;
+	height: 10.185185vw;
+	background-color: #F26F6A;
+	color: #fff;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+.popup-block__row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+}
+
+.popup-block__header h2 {
+	margin-top: 4.62963vw;
+	display: block;
+	font-weight: 500;
+	text-align: center;
+	text-transform: uppercase;
+	color: #4d3a73;
+}
+
+.popup-block__header img {
+	display: block;
+	margin: 4.166667vw auto 0;
+	width: 56.203704vw;
+	height: 27.268519vw;
+}
+
+.popup-block__header p {
+	display: block;
+	width: 80%;
+	margin: 4.62963vw auto 2.314815vw;
+	font-weight: 500;
+	text-align: center;
+	color: #4d3a73;
+}
+
+@media screen and (max-width: 767px) {
+	.popup-block__overlay {
+		overflow: hidden;
+		display: block;
+	}
+	.popup-block__popup {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		margin-top: -40%;
+		margin-left: -40%;
+	}
+}

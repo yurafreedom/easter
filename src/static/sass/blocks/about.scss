@@ -1,0 +1,23 @@
+.about-block {
+	padding-bottom: 31.018519vw;
+}
+
+.about-block img {
+	margin-top: 4.62963vw;
+	margin-bottom: 4.62963vw;
+}
+
+.about-block p {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+	margin-bottom: 2.314815vw;
+	font-weight: 500;
+	color: #4d3a73;
+}
+
+@media screen and (max-width: 767px) {
+	.btn--info.about img {
+		left: 4.888889vw;
+	}
+}

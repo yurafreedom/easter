@@ -1,0 +1,29 @@
+.step-five .step-four__textarea {
+	margin-bottom: 0;
+}
+
+.step-five .step-four__form {
+	padding-bottom: 64.814815vw;
+}
+
+.step-five .step-four__form h3 {
+	display: block;
+	text-align: center;
+	padding-top: 2.777778vw;
+	padding-bottom: 2.777778vw;
+	font-weight: 500;
+	color: #4d3a73;
+}
+
+.step-five .step-five__input {
+	border: 2px solid #4d3a73;
+	outline: 0;
+	width: 92.222222vw;
+	margin-bottom: 6.944444vw;
+	padding: 2.314815vw;
+	&::placeholder {
+		text-align: center;
+		font-weight: 500;
+		color: #4d3a73;
+	}
+}

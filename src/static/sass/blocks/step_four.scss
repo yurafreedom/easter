@@ -1,0 +1,31 @@
+.step-four {
+	&__choice-block h2 {
+		display: block;
+		text-align: center;
+		font-size: 6.7708333vw;
+		padding-top: 8.333333vw;
+		padding-bottom: 4.62963vw;
+		font-weight: 500;
+		color: #4d3a73;
+		text-transform: uppercase;
+	}
+	&__form {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		padding-bottom: 75.37037vw;
+		background-image: url('../img/bg_picture.png');
+		background-position: center;
+	}
+	&__textarea {
+		width: 92.222222vw;
+		height: 23.981481vw;
+		margin-bottom: 3.703704vw;
+		outline: 2px solid #4d3a73;
+		padding: 2.314815vw;
+		&::placeholder {
+			font-weight: 500;
+			color: #4d3a73;
+		}
+	}
+}
