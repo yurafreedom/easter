@@ -34,35 +34,50 @@ html(lang="ru-RU")
 							img.step-two__photo-egg(src="static/img/egg-1.svg", alt="")
 							img.step-two__photo-egg(src="static/img/egg-2.svg", alt="")
 					.step-two__choice-block
-						h2 Шаг 2. Выберите яйца для открытки
+						h2 Шаг 2. Выберите оформление элементов
 						.step-two__choice-controls
-							button.btn.btn--control.active(type="button") Выберите яйца
-							button.btn.btn--control(type="button") Выберите кулич
-					.step-two__eggs-block
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-1.svg", alt="")
-						a.step-two__eggs-link(href="#")
-							img(src="static/img/egg-2.svg", alt="")
+							button.btn.btn--control.active(type="button" data-toggle="choice-tab" data-target="#choice-tab-1") Выберите яйца
+							button.btn.btn--control(type="button" data-toggle="choice-tab" data-target="#choice-tab-2") Выберите кулич
+					.step-two__tab-content.active#choice-tab-1
+						.step-two__eggs-block
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-1.svg", alt="")
+							a.step-two__eggs-link(href="#")
+								img(src="static/img/egg-2.svg", alt="")
+					.step-two__tab-content#choice-tab-2
+						.step-two__easter-block
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-1.png", alt="")
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-2.png", alt="")
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-3.png", alt="")
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-4.png", alt="")
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-5.png", alt="")
+							a.step-two__easter-link(href="#")
+								img(src="static/img/easter-6.png", alt="")
 					.step-one__next-block.step-two__next-block
 						a.btn--next(href="step_three.html") Далее
 							img(src="static/img/arrow-right.png", alt="")

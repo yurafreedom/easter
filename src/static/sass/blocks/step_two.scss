@@ -2,9 +2,9 @@
 	&__choice-block h2 {
 		display: block;
 		text-align: center;
-		font-size: 6vw;
-		padding-top: 2.5vw;
-		padding-bottom: 1.666667vw;
+		font-size: 4vw;
+		padding-top: 5vw;
+		padding-bottom: 5vw;
 		font-weight: 500;
 		color: #4d3a73;
 		text-transform: uppercase;
@@ -48,8 +48,12 @@
 		display: block;
 	}
 	.step-two__next-block {
-		padding-bottom: 10.5vw;
-		padding-top: 10.8vw;
+		padding-bottom: 12.8vw;
+		padding-top: 12.8vw;
+	}
+	.step-two__next-block.active {
+		padding-top: 6.4vw;
+		padding-bottom: 6.4vw;
 	}
 	.step-one__photo-block &__photo-egg {
 		position: absolute;
@@ -69,5 +73,11 @@
 			z-index: 2;
 			transform: rotate(-50deg);
 		}
+	}
+	.step-two__tab-content {
+		display: none;
+	}
+	.step-two__tab-content.active {
+		display: block;
 	}
 }

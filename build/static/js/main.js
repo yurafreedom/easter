@@ -67,3 +67,19 @@ block.css("overflow-y", "scroll");
 var w2 = $("div", block).innerWidth();
 $(block).remove();
 scrollbarWidth = (w1 - w2);
+
+
+$('[data-toggle="choice-tab"]').click(function(e) {
+ e.preventDefault();
+ 
+ var thisTarget = $(this).attr('data-target');
+ 
+ if ($(this).parent().is('li')) {
+  $(this).parent().addClass('active').siblings().removeClass('active');
+ } else {
+  $(this).addClass('active').siblings().removeClass('active');
+ }
+ 
+ $(thisTarget).addClass('active').siblings().removeClass('active');
+ $('.step-two__next-block').toggleClass('active');
+});
